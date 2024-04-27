@@ -24,6 +24,7 @@ end
 </details></details>
 -- SQL, LUA
 ### Q2 - Fix or improve the implementation of the below method
+`
 function printSmallGuildNames(memberCount)
 -- this method is supposed to print names of all guilds that have less than memberCount max members
   local selectGuildQuery = "SELECT name FROM guilds WHERE max_members < %d;"
@@ -31,7 +32,7 @@ function printSmallGuildNames(memberCount)
   local guildName = result.getString("name") -- assuming this returns a long string of guild names rather than an iterator
   print(guildName)
 end
-
+`
 
 --LUA
 ### Q3 - Fix or improve the name and the implementation of the below method
