@@ -2,7 +2,8 @@
 
 <details open>
 <summary>Questions 1-4</summary>
-## Q1 - Fix or improve the implementation of the below methods
+	
+### Q1 - Fix or improve the implementation of the below methods
 local function releaseStorage(player)
   player:setStorageValue(1000, -1)
 end
@@ -16,7 +17,7 @@ function onLogout(player)
 end
 
 -- SQL, LUA
-## Q2 - Fix or improve the implementation of the below method
+### Q2 - Fix or improve the implementation of the below method
 function printSmallGuildNames(memberCount)
 -- this method is supposed to print names of all guilds that have less than memberCount max members
   local selectGuildQuery = "SELECT name FROM guilds WHERE max_members < %d;"
@@ -27,7 +28,7 @@ end
 
 
 --LUA
-## Q3 - Fix or improve the name and the implementation of the below method
+### Q3 - Fix or improve the name and the implementation of the below method
 function remove_member_from_PlayerParty(playerId, membername)
   player = Player(playerId)
   local party = player:getParty()
@@ -41,7 +42,7 @@ end
 
 
 --C++
-## Q4 - Assume all method calls work fine. Fix the memory leak issue in below method
+### Q4 - Assume all method calls work fine. Fix the memory leak issue in below method
 
 void Game::addItemToPlayer(const std::string& recipient, uint16_t itemId)
 {
