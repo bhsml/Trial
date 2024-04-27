@@ -1,8 +1,8 @@
 # Trial
 
 <details open>
-## Questions 1-4:
-Q1 - Fix or improve the implementation of the below methods
+<summary>Questions 1-4</summary>
+## Q1 - Fix or improve the implementation of the below methods
 local function releaseStorage(player)
   player:setStorageValue(1000, -1)
 end
@@ -16,7 +16,7 @@ function onLogout(player)
 end
 
 -- SQL, LUA
-Q2 - Fix or improve the implementation of the below method
+## Q2 - Fix or improve the implementation of the below method
 function printSmallGuildNames(memberCount)
 -- this method is supposed to print names of all guilds that have less than memberCount max members
   local selectGuildQuery = "SELECT name FROM guilds WHERE max_members < %d;"
@@ -27,7 +27,7 @@ end
 
 
 --LUA
-Q3 - Fix or improve the name and the implementation of the below method
+## Q3 - Fix or improve the name and the implementation of the below method
 function remove_member_from_PlayerParty(playerId, membername)
   player = Player(playerId)
   local party = player:getParty()
@@ -41,7 +41,7 @@ end
 
 
 --C++
-Q4 - Assume all method calls work fine. Fix the memory leak issue in below method
+## Q4 - Assume all method calls work fine. Fix the memory leak issue in below method
 
 void Game::addItemToPlayer(const std::string& recipient, uint16_t itemId)
 {
@@ -72,7 +72,7 @@ void Game::addItemToPlayer(const std::string& recipient, uint16_t itemId)
 
 
 <details open>
-  ## Question 5: Frigo Animation
+<summary>Question 5: Frigo Animation</summary>
 
 
 https://github.com/bhsml/Trial/assets/168249198/01c146dd-eff9-42a7-970c-e1efdf79ca35
@@ -83,8 +83,7 @@ https://github.com/bhsml/Trial/assets/168249198/01c146dd-eff9-42a7-970c-e1efdf79
 
 
 <details open>
-## Question 7: Jumping Button
-
+<summary>Question 7: Jumping Button</summary>
 
 https://github.com/bhsml/Trial/assets/168249198/9e481682-5060-44db-8ea8-b99c688e199f
 
