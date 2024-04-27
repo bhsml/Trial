@@ -2,8 +2,10 @@
 
 <details open>
 <summary>Questions 1-4</summary>
-	
-### Q1 - Fix or improve the implementation of the below methods
+
+<details open>
+<summary>Questions 1</summary>
+Q1 - Fix or improve the implementation of the below methods
 local function releaseStorage(player)
   player:setStorageValue(1000, -1)
 end
@@ -16,6 +18,7 @@ function onLogout(player)
   return true
 end
 
+</details></details>
 -- SQL, LUA
 ### Q2 - Fix or improve the implementation of the below method
 function printSmallGuildNames(memberCount)
