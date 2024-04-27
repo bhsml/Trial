@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spells>
+	<!-- Attack Spells -->
+	<instant group="attack" spellid="999" name="frigo" words="frigo" level="1" mana="0" cooldown="0" groupcooldown="0" needlearn="0" script="attack/frigo.lua">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+	</instant>
+	
+</spells>

@@ -1,0 +1,29 @@
+MainWindow
+  id: foodeaterMain
+  !text: tr('Food Eater')
+  size: 200 200
+  @onEscape: modules.food_eater.closing()
+  @onClick:  modules.food_eater.food_clicked()
+
+  TabBar
+    id: allTabs
+    anchors.top: parent.top
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+    anchors.left: parent.left
+
+  Panel
+    id: optionsTabContent
+    anchors.top: allTabs.top
+    anchors.left: allTabs.left
+    anchors.right: allTabs.right
+    anchors.bottom: allTabs.bottom
+    margin-top: 20
+    margin-bottom: 20
+
+  Button
+    id: Jump!
+    !text: tr('Jump!')
+    width: 45
+    anchors.right: parent.right
+    @onClick: modules.food_eater.jumpClick(self)
